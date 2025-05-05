@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/navStyles/menu-styles.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="stylesheet" href="../styles/navStyles/menu-media.css">
+    <link rel="stylesheet" href="../styles/teamsStyles/teams.css">
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="burgerBox"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Wheel of Fortune</a></li>
+            <li><a href="../teamGenerator/teamGenerator.html">Team Generator</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="mainBox">
+            <h1 style="padding-bottom: 40px;">Team Generator</h1>
+            <section class="teamsBody">
+                <div class="namesBlock">
+                    <h2>Select Students:</h2>
+                    <div class="searchBox">
+                        <input type="search" id="searchBar" placeholder="Search">
+                        <button class="searchButton">
+                            <svg class="searchIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="listButtons">
+                        <input class="checkAllBtn" type="button" name="name1" id="checkAll" value="Select All">
+                        <input class="resetAllBtn" type="reset" name="reset" id="resetAll" value="Reset">
+                    </div>
+
+                    <div class="listNames"></div>
+                    <button class="submitWheel" type="submit">Generate Teams</button>
+                </div>
+
+                <div class="teams">
+                    <div class="teamsTotal">
+                        <h3>Total Students Present:</h3>
+                        <span id="totalStudents"></span>
+                    </div>
+
+                    <div class="teamsGenerated">
+                        <h2>Teams:</h2>
+                        <div id="teamsResult"></div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="../studentsList.js"></script>
+    <script src="./teamGenerator.js"></script>
+</body>
+
+</html>

@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WheelOfFortune</title>
+    <link rel="shortcut icon" href="img/lottery.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="menu-styles.css">
-    <link rel="stylesheet" href="menu-media.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/navStyles/menu-styles.css">
+    <link rel="stylesheet" href="./styles/navStyles/menu-media.css">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
         </div>
         <ul class="menu">
             <li><a href="index.html">Wheel of Fortune</a></li>
-            <li><a href="team-page.html">Team Creation</a></li>
+            <li><a href="teamGenerator/teamGenerator.html">Team Generator</a></li>
         </ul>
     </nav>
 
@@ -48,29 +50,7 @@
                         <input class="resetAllBtn" type="reset" name="reset" id="resetAll" value="Reset">
                     </div>
 
-                    <div class="listNames">
-                        <label><input type="checkbox" value="John" /> John</label>
-                        <label><input type="checkbox" value="Jane" /> Jane</label>
-                        <label><input type="checkbox" value="Tom" /> Tom</label>
-                        <label><input type="checkbox" value="Alice" /> Alice</label>
-                        <label><input type="checkbox" value="Bob" /> Bob</label>
-                        <label><input type="checkbox" value="Charlie" /> Charlie</label>
-                        <label><input type="checkbox" value="Eve" /> Eve</label>
-                        <label><input type="checkbox" value="Mike" /> Mike</label>
-                        <label><input type="checkbox" value="Lucy" /> Lucy</label>
-                        <label><input type="checkbox" value="David" /> David</label>
-                        <label><input type="checkbox" value="Emma" /> Emma</label>
-                        <label><input type="checkbox" value="James" /> James</label>
-                        <label><input type="checkbox" value="Mia" /> Mia</label>
-                        <label><input type="checkbox" value="Jack" /> Jack</label>
-                        <label><input type="checkbox" value="Sophia" /> Sophia</label>
-                        <label><input type="checkbox" value="Liam" /> Liam</label>
-                        <label><input type="checkbox" value="Olivia" /> Olivia</label>
-                        <label><input type="checkbox" value="Ben" /> Ben</label>
-                        <label><input type="checkbox" value="Chloe" /> Chloe</label>
-                        <label><input type="checkbox" value="Henry" /> Henry</label>
-                        <label><input type="checkbox" value="Grace" /> Grace</label>
-                    </div>
+                    <div class="listNames"></div>
                     <button class="submitWheel" type="submit">Spin the Wheel</button>
                 </div>
                 <div class="wheelCaret">
@@ -92,6 +72,7 @@
             </a>
         </div>
     </main>
+    <script src="studentsList.js"></script>
     <script src="main.js"></script>
 </body>
 

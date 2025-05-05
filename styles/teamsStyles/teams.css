@@ -1,0 +1,33 @@
+.teams {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 40px;
+    flex-basis: 50%;
+}
+
+.teamsTotal {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+#totalStudents {
+    color: blueviolet;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.teamsGenerated {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 400px;
+}
+
+.teamsBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
