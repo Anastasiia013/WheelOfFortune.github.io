@@ -1,0 +1,362 @@
+/* Медиазапрос для экранов Full HD*/
+@media (min-width: 1800px) and (max-width: 4000px) {
+    body {
+        overflow: hidden;
+    }
+
+    main {
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .mainBox {
+        gap: 40px;
+    }
+
+    .mainBox h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .studentsName {
+        font-size: 28px;
+    }
+
+    .sectorLabels div {
+        top: 49%;
+        left: 32%;
+        font-size: 16px;
+        width: 216px;
+    }
+
+    .searchBox {
+        height: 60px;
+    }
+
+    .searchBox input {
+        padding: 20px 0px 20px 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .searchIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .searchBox button {
+        flex-basis: 15%;
+        padding: 20px;
+    }
+
+    .wheelMain {
+        width: 600px;
+        height: 600px;
+    }
+
+    .wheelBody {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .listNames {
+        font-size: 22px;
+        gap: 10px;
+    }
+
+    .namesBlock {
+        width: 40em;
+    }
+
+
+    input[type='checkbox'] {
+        height: 26px;
+        width: 26px;
+    }
+
+    input[type="checkbox"]:checked::before {
+        background-color: #8243D6;
+        height: 18px;
+        width: 18px;
+    }
+
+    .mainBox {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .checkAllBtn,
+    .resetAllBtn {
+        width: 50%;
+        padding: 16px 0px;
+        font-size: 22px;
+    }
+
+    .submitWheel {
+        padding: 36px 0px;
+        font-size: 26px;
+    }
+
+    .submitWheel:hover {
+        font-size: 30px;
+    }
+
+    .author {
+        gap: 16px;
+        padding-top: 0px;
+    }
+
+    .author p {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width:1000px) and (max-width:1800px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+/* Медиазапрос для экранов дo 1000px */
+@media (min-width: 600px) and (max-width: 999px) {
+    body {
+        font-size: 12px;
+        overflow: visible;
+    }
+
+    main {
+        height: 100vh;
+        justify-content: start;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .namesBlock {
+        width: 90vw;
+        box-shadow: none;
+        border: none;
+        padding: 0px;
+    }
+
+    .listButtons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .checkAllBtn,
+    .resetAllBtn {
+        width: 50%;
+        box-shadow: none;
+    }
+
+    .submitWheel {
+        box-shadow: none;
+    }
+
+    .checkAllBtn:hover,
+    .resetAllBtn:hover,
+    .submitWheel:hover {
+        box-shadow: none;
+    }
+
+    .mainBox {
+        gap: 16px;
+        justify-content: start;
+        gap: 0px;
+    }
+
+    .mainBox h1 {
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .studentsName {
+        padding: 10px 0px;
+    }
+
+    .wheelMain {
+        width: 500px;
+        height: 500px;
+    }
+
+    .sectorLabels div {
+        top: 49%;
+        font-size: 12px;
+    }
+
+    .wheelCaret img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: -10px;
+    }
+
+    .listNames {
+        height: 200px;
+        padding: 6px;
+    }
+
+    .wheelBody {
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .author {
+        gap: 10px;
+        padding-top: 40px;
+        position: relative;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .author hr {
+        display: none;
+    }
+
+    .author p {
+        font-size: 10px;
+        width: max-content;
+    }
+
+    .author a svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* Медиазапрос для экранов до 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 10px;
+        overflow: visible;
+    }
+
+    main {
+        height: 100vh;
+        justify-content: start;
+        padding-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .mainBox {
+        justify-content: start;
+        gap: 0px;
+    }
+
+    .mainBox h1 {
+        font-size: 20px;
+    }
+
+    .studentsName {
+        padding: 6px 0px;
+    }
+
+    .wheelBody {
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+    }
+
+    .wheelCaret img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: -10px;
+    }
+
+    .wheelMain {
+        width: 360px;
+        height: 360px;
+    }
+
+    .sectorLabels div {
+        left: 50%;
+        font-size: 8px;
+        width: 1px;
+    }
+
+    .namesBlock {
+        min-width: 360px;
+        box-shadow: none;
+        border: none;
+        padding: 0px;
+        gap: 6px;
+    }
+
+    .listButtons {
+        width: 100%;
+    }
+
+    .checkAllBtn,
+    .resetAllBtn {
+        width: 50%;
+        box-shadow: none;
+    }
+
+    .checkAllBtn:hover,
+    .resetAllBtn:hover {
+        box-shadow: none;
+    }
+
+    .listNames {
+        height: 100px;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    input[type='checkbox'] {
+        height: 10px;
+        width: 10px;
+        border-radius: 6px;
+        border: 1px solid #8243D6;
+    }
+
+    input[type="checkbox"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
+
+    .submitWheel {
+        padding: 16px 20px;
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        box-shadow: none;
+    }
+
+    .submitWheel:hover {
+        font-size: 14px;
+        box-shadow: none;
+    }
+
+    .author {
+        gap: 10px;
+        padding-top: 40px;
+        position: relative;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .author hr {
+        display: none;
+    }
+
+    .author p {
+        font-size: 10px;
+        width: max-content;
+    }
+
+    .author a svg {
+        height: 20px;
+        width: 20px;
+    }
+}
